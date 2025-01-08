@@ -5,10 +5,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
-import WorkIcon from "@material-ui/icons/Work";
-import SchoolIcon from "@material-ui/icons/School";
-import StarRateIcon from "@material-ui/icons/StarRate";
+import { FaLaptopCode } from "react-icons/fa"; // For Fullstack developer
+import { FaBuilding } from "react-icons/fa"; // For company
+import { FaUserGraduate } from "react-icons/fa"; // For Student
 import { ThemeContext } from "../../Context/theme";
 
 export const Timeline = () => {
@@ -24,6 +23,7 @@ export const Timeline = () => {
       setlinecolor("#23283e");
     }
   }, [themename]);
+
   return (
     <>
       <div className="section mainsection">
@@ -48,27 +48,21 @@ export const Timeline = () => {
               backgroundColor: `var(--clr-bg)`,
               color: `var(--clr-primary)`,
             }}
-            icon={<WorkIcon />}
+            icon={<FaLaptopCode />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Fullstack developer
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Fullstack Developer
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
               Essentials
             </h4>
             <p data-aos="fade-right">
               Currently a fullstack developer that develops both the frontend and backend of web applications
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
-          
-            date={"October 2022- Feburary 2024"}
+            date={"October 2022 - February 2024"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               border: "3px solid var(--clr-primary)",
@@ -84,26 +78,20 @@ export const Timeline = () => {
               backgroundColor: `var(--clr-bg)`,
               color: `var(--clr-primary)`,
             }}
-            icon={<WorkIcon />}
+            icon={<FaBuilding />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              fullstack developer 
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Fullstack Developer
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Ntech systems
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              Ntech Systems
             </h4>
             <p data-aos="fade-right">
-              I was a  fullstack developer at Ntech systems where i developed web applications and also tutor some students
+              I was a fullstack developer at Ntech systems where I developed web applications and also tutored some students.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
-           
             date={"Oct 2021 - April 2022"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
@@ -120,180 +108,48 @@ export const Timeline = () => {
               backgroundColor: `var(--clr-bg)`,
               color: `var(--clr-primary)`,
             }}
-            icon={<SchoolIcon />}
+            icon={<FaBuilding />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Frontend developer Lead
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Frontend Developer Lead
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
               Zentrix (Remote)
             </h4>
             <p data-aos="fade-right">
-            worked as a frontend developer lead for the team of 8 in which i was able to successfully developed 2 apps with my teammates.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"May 2016- Feburary 2020"}
-           
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<WorkIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Student 
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Obafemi Awolowo University
-            </h4>
-            <p data-aos="fade-right">
-              studied English-Language while in school and graduated with a second class (upper division)
-            </p>
-          </VerticalTimelineElement>
-          {/* <VerticalTimelineElement
-            date={"May 2016- Feburary 2020"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<WorkIcon />} */}
-          {/* > */}
-            {/* <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Founder & Director (Part Time)
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Sitocrats Pvt. Ltd., Parbhani (MH)
-            </h4>
-            <p data-aos="fade-right">
-              Started in Dec 2019 and delivered 15+ Projects on wordpress,
-              Angular, Nodejs and Flutter till Aug 2021.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"Jul 2017 - Aug 2021"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<SchoolIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Student [BTech. (Agril. Engineering)]
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              CAET, VNMKV University, Parbhani (MH)
-            </h4>
-            <p data-aos="fade-right">
-              Studied Agricultural Engineering which consists of all the
-              subjects accross all engineering and agricultural streams. Passed
-              with 8.32 CGPA
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"March 2017"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<SchoolIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Student [HSC (Science)]
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Janata Jr. College, Ruichhattishi, Ahmednagar
-            </h4>
-            <p data-aos="fade-right">
-              Studied 12th Science and Passed with 85.69 Percentage.
+              Worked as a frontend developer lead for a team of 8, where I successfully developed 2 apps with my teammates.
             </p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            icon={<StarRateIcon />}
+            date={"May 2016 - February 2020"}
+            contentStyle={{
+              boxShadow: `var(--shadow)`,
+              border: "3px solid var(--clr-primary)",
+              backgroundColor: `var(--clr-bg)`,
+              textAlign: "center",
+              color: `var(--clr-fg-alt)`,
+            }}
+            contentArrowStyle={{
+              borderRight: "16px solid  var(--clr-primary)",
+            }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
               backgroundColor: `var(--clr-bg)`,
               color: `var(--clr-primary)`,
             }}
-          ></VerticalTimelineElement> */}
+            icon={<FaUserGraduate />}
+          >
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Student
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              Obafemi Awolowo University
+            </h4>
+            <p data-aos="fade-right">
+              Studied English Language while in school and graduated with a second class (upper division).
+            </p>
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
     </>

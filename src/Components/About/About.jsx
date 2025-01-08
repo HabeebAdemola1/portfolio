@@ -1,17 +1,11 @@
 import React from "react";
 import "./About.css";
 import { Type } from "./Type";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneIcon from "@material-ui/icons/Phone";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import DescriptionIcon from "@material-ui/icons/Description";
-// import PublicIcon from "@material-ui/icons/Public";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaTwitter } from "react-icons/fa"; // Importing icons from react-icons
 import { Introduction } from "./Introduction";
 import { Timeline } from "./Timeline";
 import { Techstacks } from "./Techstacks";
-// import Button from "@mui/material/Button";
+
 export const About = () => {
   return (
     <>
@@ -33,16 +27,16 @@ export const About = () => {
             rel="noreferrer"
             className="link link--icon"
           >
-            <GitHubIcon />
+            <FaGithub /> {/* Replaced with react-icons */}
           </a>
           <a
-            href="Ademolawaliyu1@gmail.com"
+            href="mailto:Ademolawaliyu1@gmail.com"
             target="_blank"
             rel="noreferrer"
             aria-label="mail"
             className="link link--icon"
           >
-            <EmailIcon />
+            <FaEnvelope /> {/* Replaced with react-icons */}
           </a>
           <a
             href="tel:+08166489562"
@@ -51,28 +45,28 @@ export const About = () => {
             aria-label="phone"
             className="link link--icon"
           >
-            <PhoneIcon />
+            <FaPhone /> {/* Replaced with react-icons */}
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com"
             aria-label="linkedin"
             className="link link--icon"
             target="_blank"
             rel="noreferrer"
           >
-            <LinkedInIcon />
+            <FaLinkedin /> {/* Replaced with react-icons */}
           </a>
           <a
-            href="#"
+            href="https://twitter.com"
             aria-label="twitter"
             className="link link--icon"
             target="_blank"
             rel="noreferrer"
           >
-            <TwitterIcon />
+            <FaTwitter /> {/* Replaced with react-icons */}
           </a>
         </div>
-{/* 
+        {/* 
         <button
           className="btnResume"
           onClick={() => {
@@ -82,7 +76,8 @@ export const About = () => {
           }}
         >
           Resume
-        </button> */}
+        </button> 
+        */}
       </div>
       <Introduction />
       <Timeline />

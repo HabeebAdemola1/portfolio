@@ -1,10 +1,7 @@
 import React from "react";
 import { ThemeContext } from "../../Context/theme";
+import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa"; // Importing icons from react-icons
 import "./Navbar.css";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
-import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
 
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
@@ -17,6 +14,7 @@ export const Navbar = () => {
     }
     setShowNavList(!showNavList);
   };
+
   return (
     <>
       <nav className="center nav">
@@ -69,18 +67,8 @@ export const Navbar = () => {
               Contact
             </a>
           </li>
-          <li className="nav__list-item">
-            {/* <a
-              href="https://drive.google.com/file/d/1O7O6dgBNriadNFoYRj8kHr6-dyPyoG4n/view?usp=sharing"
-              onClick={toggleNavList}
-              className="link link--nav"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume
-            </a> */}
-          </li>
         </ul>
+
         <button
           type="button"
           onClick={toggeltheme}
@@ -88,15 +76,16 @@ export const Navbar = () => {
           aria-label="toggle theme"
           style={{ backgroundColor: "inherit" }}
         >
-          {themename === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+          {themename === "dark" ? <FaSun /> : <FaMoon />} {/* Replaced with react-icons */}
         </button>
+
         <button
           type="button"
           onClick={toggleNavList}
           className="btn btn--icon nav__hamburger"
           aria-label="toggle navigation"
         >
-          {showNavList ? <CloseIcon /> : <MenuIcon />}
+          {showNavList ? <FaTimes /> : <FaBars />} {/* Replaced with react-icons */}
         </button>
       </nav>
     </>
