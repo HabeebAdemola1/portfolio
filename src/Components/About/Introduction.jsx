@@ -1,7 +1,7 @@
 import React from "react";
 import "./Introduction.css";
 import { ThemeContext } from "../../Context/theme";
-import profilePic from "../../assets/WhatsApp Image 2025-01-08 at 09.18.38_6378c020.jpg";
+import profilePic from "../../assets/myphoto.jpg";
 // Importing relevant icons from react-icons
 import { FaLaptopCode, FaChalkboardTeacher } from "react-icons/fa"; 
 
