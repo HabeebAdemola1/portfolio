@@ -11,7 +11,8 @@ import {
   SiNetlify,
   SiTypescript,
   SiPm2,
-  SiRabbitmq
+  SiRabbitmq,
+  SiDocker
 } from "react-icons/si";
 // import SiMaterialui from "react-icons/si"
 import { DiCss3, DiMongodb } from "react-icons/di";
@@ -95,6 +96,10 @@ export const Techstacks = () => {
           </div>
           <div>
             <SiPm2 />
+            <h5>Pm2</h5>
+          </div>
+          <div>
+            <SiDocker />
             <h5>Pm2</h5>
           </div>
         </div>

@@ -36,8 +36,10 @@ export const Projects = () => {
       <div className="section">
         <h2 className="section__title different">Projects</h2>
         <div className="allProjects">
+        
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
+            
               <div className="project_videocontainer">
                 <div>
                   <img
@@ -169,15 +171,15 @@ export const Projects = () => {
                  
                 </div>
                 <div>
-                  {/* <a
-                    href="https://eschoolconnect.ng/"
+                  <a
+                    href="https://hrm.emedicals.ng/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <span type="button" className="btns onbt">
                       See this Live
                     </span>
-                  </a> */}
+                  </a>
                   <a
                     href="https://github.com/HabeebAdemola1/HRMS"
                     target="_blank"
