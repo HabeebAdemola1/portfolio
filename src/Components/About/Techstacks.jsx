@@ -100,7 +100,7 @@ export const Techstacks = () => {
           </div>
           <div>
             <SiDocker />
-            <h5>Pm2</h5>
+            <h5>Docker</h5>
           </div>
         </div>
       </div>
